@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>MY Profile</title>
+    <meta name="description" content="My profile">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="profile.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+<div id="page_top"><a href="#"></a></div>
+</div>
+  </head>
+
+  <body>
+    <header id="header">
+      <h1 class="site-title"><a href="index.html">My Profile</a></h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Life Style</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="https://atsuuuun.github.io">Before</a></li>
+          <li>
+            <a href="https://www.instagram.com/bokuno.monogatari" target="_blank">
+              <img class="icon" src="./img/instagram-logo.svg" alt="インスタグラム">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="mainvisual">
+        <picture>
+          <source media="(max-width: 600px)" srcset="img/mainvisual-sp.jpg">
+          <img src="img/mainvisual-pc.jpg" alt="テキストテキストテキスト">
+        </picture>
+      </div>
+
+       <!--プロフィールや経歴を記載-->
+      <section id="about" class="wrapper">
+        <h2 class="sec-title">About</h2>
+        <ul>
+          <li>Atsuya Osaki</li>
+          <li>5th Floor Aoyama Second Wada Building 5-12-6 Aoyama, Minato-ku, Tokyo 107-0062 Japan</li>
+          <li>tel: 03-6433-5163</li>
+          <li>url: https://www.in-stance.com/index.html</li>
+          <li>mail: a.osaki@in-stance.com</li>
+        </ul>
+       
+        <li>経歴</li>
+        <li>・東京都八王子市にて成長</li>
+        <li>・5歳から極真空手に励み、最終成績として八王子市2位、黒帯(初段)を取得し卒業</li>
+        <li>・空手と並行して小学6年卒業までサッカーチームに所属。最終成績として八王子市1位、4年間キャプテンとして活動</li>
+        <li>・中学生活ではバスケットボール部に入部。最終成績として八王子市3位。部長として活動</li>
+        <li>・高校生活ではアパレルの接客業を3年間経験。VANSにて接客の苦労を経験</li>
+        <li>・大学生活では別のブランドにてアパレルの接客業を4年間経験。バイトリーダーの役割として活動</li>
+        <li>・3歳からサーフィンをやっており、大学時代には全国大会にて団体成績2位を収めた</li>
+      </section>
+
+      <!--ページ遷移できる画像を配置-->
+      <section id="works" class="wrapper">
+        <h2 class="sec-title">Life Style</h2>
+        <ul>
+          <li><a href="layout.html"><img src="img/layout0.jpg" alt="layout"></a></li>
+          <li><a href="apparel.html"><img src="img/apparel1.jpg" alt="apparel"></a></li>
+          <li><a href="photo.html"><img src="img/work2.JPG" alt="photo"></a></li>
+        </ul>
+      </section>
+
+      <!--ニュース欄を配置-->
+      <section id="news" class="wrapper">
+        <h2 class="sec-title">News</h2>
+        <dl>
+          <dt>2022.11.29</dt>
+          <dd>カフェの撮影を開始しました。</dd>
+          <dt>2017.05.13</dt>
+          <dd>サーフィンの全国大会で大学ランク3位に入賞しました。</dd>
+          <dt>2017.04.01</dt>
+          <dd>神奈川大学 経営学部 国際経営学科に入学しました。</dd>
+          <dt>2017.03.14</dt>
+          <dd>東京都立若葉総合高等学校を卒業しました。</dd>
+          <dt>1998.07.07</dt>
+          <dd>【生誕】この世に生を授かりました。</dd>
+        </dl>
+      </section>
+
+    </main>
+
+    <!--フッター-->
+    <footer id="footer">
+      <p>&copy; 2023 My Profile</p>
+    </footer>
+
+  </body>
+  
+
+</html>
