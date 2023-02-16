@@ -295,36 +295,34 @@ h2{
 }
 
 /*==================================================
-ギャラリーのためのcss
+Photoのためのcss
 ===================================*/
-.gallery{
-  columns: 4;/*段組みの数*/
-  padding:0 15px;/*ギャラリー左右に余白をつける*/
-  }
-  
-  .gallery li {
-      margin-bottom: 20px;/*各画像下に余白をつける*/
-  }
-  
-  /*ギャラリー内のイメージは横幅100%にする*/
-  .gallery img{
-    width:100%;
-    height:auto;
-    vertical-align: bottom;/*画像の下にできる余白を削除*/}
-  
-  /*　横幅900px以下の段組み設定　*/
-  @media only screen and (max-width: 900px) {
-    .gallery{
-    columns:3;
-    } 
-  }
-  
-  @media only screen and (max-width: 768px) {
-    .gallery{
-    columns: 2;
-    } 
-  }
-  
+.flex {
+  display: flex; /*横並び*/
+}
+.flex .image {
+  width: 640px; /*画像サイズ指定*/
+  margin:45;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+.flex .right {
+  margin: 40px 30px 30px 10px;
+  padding: 0;
+}
+.flex .title {
+  margin: 0;
+  padding: 0;
+  margin-right: 150px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.flex .text {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
   
   /*========= レイアウトのためのCSS ===============*/
   
@@ -356,24 +354,3 @@ h2{
     word-wrap : break-word;
   }
   
-  /*画像を出現させるアニメーションCSS*/
-  
-  .flipLeft{
-  animation-name: flipLeft;
-  animation-duration:0.5s;
-  animation-fill-mode:forwards;
-  perspective-origin: left center;
-  opacity: 0;
-  }
-  
-  @keyframes flipLeft{
-    from {
-     transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
-    opacity: 0;
-    }
-  
-    to {
-    transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
-    opacity: 1;
-    }
-  }
