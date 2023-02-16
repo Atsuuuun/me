@@ -323,6 +323,16 @@ Photoのためのcss
   padding: 0;
 }
 
+@media screen and (max-width: 600px) {
+  .flex .image {
+    margin-bottom: 70px;
+  }
+  .flex .right {
+    margin-top: 20px;
+  }
+  .flex .title {
+    margin-bottom: 40px;
+  }
   
   /*========= レイアウトのためのCSS ===============*/
   
